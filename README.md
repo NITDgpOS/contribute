@@ -1,8 +1,7 @@
 # Contribute
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/contribute`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Have you been looking for open source reposotires to contribute? Look no further! You have come to right place. This gem will find active reposotries from github to eat away your weekend time. Say goodbay to fruitless late night research, tiring click surfing and the voice in your head which make you feel guilty for not doing enough. Be warned! Your life will never be same after you have installed this gem. We offer all these unbelievbale features at a never before price of FREE! FREE! FREE!
+Why are you still waiting? Get your terminals rolling, install this gem and experience the change.
 
 ## Installation
 
@@ -22,18 +21,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You will need you api access token. [Github people have written about how can you get those magic bits](https://github.com/blog/1509-personal-api-tokens).
+
+Rename `token.yml.exmaple` to `toke.yml`.
+````
+cp token.yml.example token.yml
+```
+
+Replace `your_github_token` in `token.yml` with your token.
+
+### Look at the stars, Look how they shine for you
+
+Find repos with most stars and open issues, while you hum to [Coldplay in background](https://www.youtube.com/watch?v=yKNxeF4KMsY).
+
+```Ruby
+Contribute::Finder.stars
+```
+
+###  
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Omg Stranger! You very kind for reading this. Contribute needs you! Get your environment loaded with all the gems you will need in your journey ahead:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```sh
+$ bundle install
+```
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/contribute. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+Take at look at [what enemies are up to](https://github.com/NIT-dgp/contribute/issues).
+Slay many bug, you will. Yes, hmmm.
 
 ## License
 
