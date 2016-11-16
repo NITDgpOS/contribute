@@ -57,7 +57,8 @@ Make changes to code and test it in terminal:
 ```sh
 # Load copy of your gem in your irb
 $ irb -Ilib -rcontribute
-2.3.1 :001 > 
+2.3.1 :001 > Contribute::Finder.stars
+```
 
 Take at look at [what enemies are up to](https://github.com/NIT-dgp/contribute/issues).
 Slay many bug, you will. Yes, hmmm.
