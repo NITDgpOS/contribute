@@ -1,10 +1,12 @@
-require 'contribute/version'
-require 'octokit'
-require 'pry'
-require 'yaml'
+# frozen_string_literal: true
+require "contribute/version"
+require "octokit"
+require "pry"
+require "yaml"
 
-require 'contribute/finder'
-require 'contribute/stars'
+require "contribute/finder"
+require "contribute/stars"
 
+# Main module of the gem
 module Contribute
 end
