@@ -24,7 +24,7 @@ Or install it yourself as:
 You will need you api access token. [Github people have written about how can you get those magic bits](https://github.com/blog/1509-personal-api-tokens).
 
 Rename `.token.yml.exmaple` to `.token.yml`.
-````
+```
 cp .token.yml.example .token.yml
 ```
 
