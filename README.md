@@ -23,12 +23,12 @@ Or install it yourself as:
 
 You will need you api access token. [Github people have written about how can you get those magic bits](https://github.com/blog/1509-personal-api-tokens).
 
-Rename `token.yml.exmaple` to `toke.yml`.
+Rename `.token.yml.exmaple` to `.token.yml`.
 ````
-cp token.yml.example token.yml
+cp .token.yml.example .token.yml
 ```
 
-Replace `your_github_token` in `token.yml` with your token.
+Replace `your_github_token` in `.token.yml` with your github token.
 
 ### Look at the stars, Look how they shine for you
 
@@ -45,8 +45,19 @@ Contribute::Finder.stars
 Omg Stranger! You very kind for reading this. Contribute needs you! Get your environment loaded with all the gems you will need in your journey ahead:
 
 ```sh
+# In side contribute folder
+$ pwd
+/home/addie/contribute
+
+# Install dependencies
 $ bundle install
 ```
+
+Make changes to code and test it in terminal:
+```sh
+# Load copy of your gem in your irb
+$ irb -Ilib -rcontribute
+2.3.1 :001 > 
 
 Take at look at [what enemies are up to](https://github.com/NIT-dgp/contribute/issues).
 Slay many bug, you will. Yes, hmmm.
