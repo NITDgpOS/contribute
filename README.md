@@ -42,7 +42,7 @@ Contribute::Finder.stars
 
 ## Development
 
-Omg Stranger! You very kind for reading this. Contribute needs you! Get your environment loaded with all the gems you will need in your journey ahead:
+Omg Stranger! You are very kind for reading this. Contribute needs you! Get your environment loaded with all the gems you will need in your journey ahead:
 
 ```sh
 # In side contribute folder
@@ -66,4 +66,3 @@ Slay many bug, you will. Yes, hmmm.
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
