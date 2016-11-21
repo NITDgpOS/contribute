@@ -6,6 +6,7 @@ module Contribute
       token_file = YAML.load_file(File.expand_path("../../.token.yml", __dir__))
       @token = token_file["token"]
       @finder = Octokit::Client.new :access_token => token
+      @finder.auto_paginate = true
     end
 
     def stars
