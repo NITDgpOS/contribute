@@ -35,7 +35,7 @@ Replace `your_github_token` in `.token.yml` with your github token.
 Find repos with most stars and open issues, while you hum to [Coldplay in background](https://www.youtube.com/watch?v=yKNxeF4KMsY).
 
 ```Ruby
-Contribute::Finder.stars
+Contribute::Finder.new.stars
 ```
 
 ###  
