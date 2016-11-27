@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 require "contribute/version"
 require "octokit"
-require "pry"
 require "yaml"
 
 require "contribute/finder"
