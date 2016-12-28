@@ -4,7 +4,7 @@ require "octokit"
 require "yaml"
 
 require "contribute/finder"
-require "contribute/stars"
+require "contribute/client"
 
 # Main module of the gem
 module Contribute

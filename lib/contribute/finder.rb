@@ -1,21 +1,32 @@
-# frozen_string_literal: true
 module Contribute
-  # Class to find repos with stars
   class Finder
-    def initialize
-      token_file = YAML.load_file(File.expand_path("../../.token.yml", __dir__))
-      @token = token_file["token"]
-      @finder = Octokit::Client.new :access_token => token
-      @finder.auto_paginate = true
+
+  	def initialize(query = "")
+  		@finder_client = Contribute::Client.new.octokit
+      @query = query
+  	end
+
+    def language(name)
+      query << " language:#{name}"
+      self
     end
 
-    def stars
-      results = finder.search_repositories(" stars:>10000")
+  	def stars(lo = '*', hi = '*')
+  		query << " stars:#{lo}..#{hi}"
+      self
+  	end
+
+    def forks(lo = '*', hi = '*')
+      query << " forks:#{lo}..#{hi}"
+      self
+    end
+
+    def find
+      results = finder_client.search_repositories query
       puts results["items"].map { |r| r["full_name"] }
     end
 
-  private
-
-    attr_reader :token, :finder
+  	private
+  	attr_reader :finder_client, :query
   end
 end
