@@ -34,10 +34,10 @@ Replace `your_github_token` in `.token.yml` with your github token.
 
 ### Look at the stars, Look how they shine for you
 
-Find repos with most stars and open issues, while you hum to [Coldplay in background](https://www.youtube.com/watch?v=yKNxeF4KMsY).
+You can chain various options. For example, following command will return repos with primary language ruby and whose stars are between 1000 and 5000:
 
 ```Ruby
-Contribute::Finder.new.stars
+Contribute::Finder.new.language("ruby").stars(1000,5000).find
 ```
 
 ###  
