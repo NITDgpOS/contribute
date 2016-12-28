@@ -25,8 +25,11 @@ Style/Alias:
 Style/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
+Style/Documentation:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
-  EnforcedStyle: always
+  Enabled: falses
 
 Style/MultilineOperationIndentation:
   EnforcedStyle: indented
@@ -36,20 +39,12 @@ Style/SignalException:
   EnforcedStyle: only_raise
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 Style/StringLiteralsInInterpolation:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 # Having these make it easier to *not* forget to add one when adding a new
 # value and you can simply copy the previous line.
 Style/TrailingCommaInLiteral:
   EnforcedStyleForMultiline: comma
-
-# 1.8.7 support
-
-Style/HashSyntax:
-  EnforcedStyle: hash_rockets
-
-Style/DotPosition:
-  EnforcedStyle: trailing
