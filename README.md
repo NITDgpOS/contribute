@@ -40,6 +40,12 @@ You can chain various options. For example, following command will return repos 
 Contribute::Finder.new.language("ruby").stars(1000,5000).find
 ```
 
+You can also use any search string as per [github documentation](https://help.github.com/articles/searching-code/) to find repos.
+
+```Ruby
+Contribute::Finder.new("language:ruby").find
+``` 
+
 ###  
 
 ## Development
@@ -59,7 +65,7 @@ Make changes to code and test it in terminal:
 ```sh
 # Load copy of your gem in your irb
 $ irb -Ilib -rcontribute
-2.3.1 :001 > Contribute::Finder.stars
+2.3.1 :001 > Contribute::Finder.new('language:ruby').find
 ```
 
 Take at look at [what enemies are up to](https://github.com/NIT-dgp/contribute/issues).
