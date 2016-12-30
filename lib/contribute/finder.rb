@@ -38,7 +38,7 @@ module Contribute
 
     def find
       results = finder_client.search_repositories query, options
-      puts results['items'].map { |r| r['full_name'] }
+      results['items'].map { |r| r['full_name'] }
     end
 
   private
