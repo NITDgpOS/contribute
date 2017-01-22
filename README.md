@@ -44,9 +44,25 @@ You can also use any search string as per [github documentation](https://help.gi
 
 ```Ruby
 Contribute::Finder.new("language:ruby").find
-``` 
+```
 
-###  
+#### Finding repos
+You can filter out repo of your interest using following methods:
+* `forks`
+* `stars`
+* `langauge`
+
+#### Sorting and ordering
+Sort repos by calling `sort_by`. Call `order` with `desc` or `asc` to order your repos in descending and ascending order respectively.
+```Ruby
+# valid option for sorting: created, updated, stars, forks
+Contribute::Finder.new("language:ruby").sort_by('stars').order('asc')find
+```
+Use `Contribute::ExtendedSort` module if you would like sort by name, size, watchers and issues.
+```Ruby
+repos = Contribute::Finder.new("language:ruby").find
+Contribute::ExtendedSort.sort_by!(repos, 'size')
+```
 
 ## Development
 
@@ -68,8 +84,7 @@ $ irb -Ilib -rcontribute
 2.3.1 :001 > Contribute::Finder.new('language:ruby').find
 ```
 
-Take at look at [what enemies are up to](https://github.com/NIT-dgp/contribute/issues).
-Slay many bug, you will. Yes, hmmm.
+Take at look at [our issues board](https://github.com/NIT-dgp/contribute/issues).
 
 ## License
 

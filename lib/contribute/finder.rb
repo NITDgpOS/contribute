@@ -1,5 +1,7 @@
 module Contribute
   class Finder
+    Repo = Struct.new(:full_name, :name, :size, :watchers, :issues)
+
     SORT_OPTIONS = %w(created updated stars forks).freeze
     ORDER_OPTIONS = %w(desc asc).freeze
 
@@ -24,7 +26,7 @@ module Contribute
       self
     end
 
-    def sort(field)
+    def sort_by(field)
       raise error_msg('sort', SORT_OPTIONS) unless SORT_OPTIONS.include? field
       options[:sort] = field
       self
@@ -38,7 +40,9 @@ module Contribute
 
     def find
       results = finder_client.search_repositories query, options
-      results['items'].map { |r| r['full_name'] }
+      results['items'].map do |r|
+        Repo.new(r['full_name'], r['name'], r['size'], r['watchers'], r['open_issues'])
+      end
     end
 
   private
@@ -46,7 +50,7 @@ module Contribute
     attr_reader :finder_client, :query, :options
 
     def error_msg(type, valid_otions)
-      "Input value for '#{type}' was not valid. Valid inputs: #{valid_otions.join(', ')}"
+      "'#{type}' field argument is not valid. Valid inputs: #{valid_otions.join(', ')}"
     end
   end
 end

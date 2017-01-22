@@ -5,6 +5,7 @@ require 'yaml'
 
 require 'contribute/finder'
 require 'contribute/client'
+require 'contribute/extended_sort'
 
 # Main module of the gem
 module Contribute
