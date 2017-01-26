@@ -16,6 +16,11 @@ module Contribute
       self
     end
 
+    def size(size)
+      query << " size:#{size}"
+      self
+    end
+
     def stars(lo = '*', hi = '*')
       query << " stars:#{lo}..#{hi}"
       self
