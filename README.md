@@ -1,6 +1,6 @@
 # Contribute
 
-Have you been looking for open source reposotires to contribute? Look no further! You have come to right place. This gem will find active reposotries from github to eat away your weekend time. Say goodbay to fruitless late night research, tiring click surfing and the voice in your head which make you feel guilty for not doing enough. Be warned! Your life will never be same after you have installed this gem. We offer all these unbelievbale features at a never before price of FREE! FREE! FREE!
+Have you been looking for open source repositories to contribute? Look no further! You have come to right place. This gem will find active repositories from github to eat away your weekend time. Say goodbay to fruitless late night research, tiring click surfing and the voice in your head which make you feel guilty for not doing enough. Be warned! Your life will never be same after you have installed this gem. We offer all these unbelievbale features at a never before price of FREE! FREE! FREE!
 Why are you still waiting? Get your terminals rolling, install this gem and experience the change.
 
 Disclaim: This gem is WIP. We will be adding exciting features like sorting repos by most newcomer issues and active pulse. Until then you should have a look at http://up-for-grabs.net/#/
@@ -56,7 +56,7 @@ You can filter out repo of your interest using following methods:
 Sort repos by calling `sort_by`. Call `order` with `desc` or `asc` to order your repos in descending and ascending order respectively.
 ```Ruby
 # valid option for sorting: created, updated, stars, forks
-Contribute::Finder.new("language:ruby").sort_by('stars').order('asc')find
+Contribute::Finder.new("language:ruby").sort_by('stars').order('asc').find
 ```
 Use `Contribute::ExtendedSort` module if you would like sort by name, size, watchers and issues.
 ```Ruby
