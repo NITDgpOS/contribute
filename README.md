@@ -1,4 +1,4 @@
-# Contribute
+# Contribute[![Build Status](https://api.travis-ci.org/NIT-dgp/contribute.svg?branch=master)]
 
 Have you been looking for open source repositories to contribute? Look no further! You have come to right place. This gem will find active repositories from github to eat away your weekend time. Say goodbay to fruitless late night research, tiring click surfing and the voice in your head which make you feel guilty for not doing enough. Be warned! Your life will never be same after you have installed this gem. We offer all these unbelievbale features at a never before price of FREE! FREE! FREE!
 Why are you still waiting? Get your terminals rolling, install this gem and experience the change.
