@@ -3,11 +3,11 @@
 Have you been looking for open source repositories to contribute? Look no further! You have come to right place. This gem will find active repositories from github to eat away your weekend time. Say goodbay to fruitless late night research, tiring click surfing and the voice in your head which make you feel guilty for not doing enough. Be warned! Your life will never be same after you have installed this gem. We offer all these unbelievbale features at a never before price of FREE! FREE! FREE!
 Why are you still waiting? Get your terminals rolling, install this gem and experience the change.
 
-Disclaim: This gem is WIP. We will be adding exciting features like sorting repos by most newcomer issues and active pulse. Until then you should have a look at http://up-for-grabs.net/#/
+:exclamation:Disclaimer: This gem is WIP. We will be adding exciting features like sorting repos by most newcomer issues and active pulse. Until then you should have a look at :point_right: http://up-for-grabs.net/#/
 
-## Installation
+## Installation :dvd: 
 
-Add this line to your application's Gemfile:
+Add this line :point_down: to your application's Gemfile:
 
 ```ruby
 gem 'contribute'
@@ -21,9 +21,9 @@ Or install it yourself as:
 
     $ gem install contribute
 
-## Usage
+## Usage :iphone:
 
-You will need you api access token. [Github people have written about how can you get those magic bits](https://github.com/blog/1509-personal-api-tokens).
+You will need your api access token. :point_right: [Github people have written about how can you get those magic bits](https://github.com/blog/1509-personal-api-tokens).
 
 Rename `.token.yml.exmaple` to `.token.yml`.
 ```
@@ -40,19 +40,19 @@ You can chain various options. For example, following command will return repos 
 Contribute::Finder.new.language("ruby").stars(1000,5000).find
 ```
 
-You can also use any search string as per [github documentation](https://help.github.com/articles/searching-code/) to find repos.
+You can also use any search string as per :green_book: [github documentation](https://help.github.com/articles/searching-code/) to find repos.
 
 ```Ruby
 Contribute::Finder.new("language:ruby").find
 ```
 
-#### Finding repos
+#### Finding repos :mag:
 You can filter out repo of your interest using following methods:
 * `forks`
 * `stars`
 * `langauge`
 
-#### Sorting and ordering
+#### Sorting and ordering :scroll:
 Sort repos by calling `sort_by`. Call `order` with `desc` or `asc` to order your repos in descending and ascending order respectively.
 ```Ruby
 # valid option for sorting: created, updated, stars, forks
@@ -64,7 +64,7 @@ repos = Contribute::Finder.new("language:ruby").find
 Contribute::ExtendedSort.sort_by!(repos, 'size')
 ```
 
-## Development
+## Development :computer:
 
 Omg Stranger! You are very kind for reading this. Contribute needs you! Get your environment loaded with all the gems you will need in your journey ahead:
 
@@ -84,8 +84,9 @@ $ irb -Ilib -rcontribute
 2.3.1 :001 > Contribute::Finder.new('language:ruby').find
 ```
 
-Take at look at [our issues board](https://github.com/NIT-dgp/contribute/issues).
+Take at look at :book: [our issues board](https://github.com/NIT-dgp/contribute/issues).
 
-## License
+## License :orange_book:
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the :page_facing_up: [MIT License](http://opensource.org/licenses/MIT).
+
