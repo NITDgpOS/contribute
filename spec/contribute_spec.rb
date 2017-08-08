@@ -1,9 +1,6 @@
 require 'spec_helper'
 
 describe Contribute do
-  it 'runs some test' do
-    expect(true).to eq(true)
-  end
 
   it 'has a version number' do
     expect(Contribute::VERSION).not_to be nil
